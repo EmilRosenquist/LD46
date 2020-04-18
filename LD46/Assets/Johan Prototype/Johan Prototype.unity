@@ -121,6 +121,274 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &22580931
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.9900002
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201641, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: racistSlurs.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: interestingRegion
+      value: 
+      objectReference: {fileID: 1235627975}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: racistSlurs.Array.data[0]
+      value: God damn natives!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: racistSlurs.Array.data[1]
+      value: Go away ya bow slinging fuck!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: racistSlurs.Array.data[2]
+      value: This is my vacation!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: racistSlurs.Array.data[3]
+      value: Stop bothering me, Scum!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: racistSlurs.Array.data[4]
+      value: Scum!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: racistSlurs.Array.data[5]
+      value: "What do you want to sell, hombr\xE9?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: racistSlurs.Array.data[6]
+      value: You aint no calling me fat skinny boy!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: interactRange
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201655, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_Name
+      value: Jenkare (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9124832669592998149, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a027cb4fbd4e59b49b2aceaddd287907, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 38b91c801f7e5214db7ce5ddb2a1193e, type: 3}
+--- !u!1001 &25139837
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.9900002
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201641, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: racistSlurs.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: interestingRegion
+      value: 
+      objectReference: {fileID: 1235627975}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: racistSlurs.Array.data[0]
+      value: God damn natives!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: racistSlurs.Array.data[1]
+      value: Go away ya bow slinging fuck!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: racistSlurs.Array.data[2]
+      value: This is my vacation!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: racistSlurs.Array.data[3]
+      value: Stop bothering me, Scum!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: racistSlurs.Array.data[4]
+      value: Scum!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: racistSlurs.Array.data[5]
+      value: "What do you want to sell, hombr\xE9?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: racistSlurs.Array.data[6]
+      value: You aint no calling me fat skinny boy!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: interactRange
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201655, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_Name
+      value: Jenkare (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9124832669592998149, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a027cb4fbd4e59b49b2aceaddd287907, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 38b91c801f7e5214db7ce5ddb2a1193e, type: 3}
 --- !u!1 &61228894
 GameObject:
   m_ObjectHideFlags: 0
@@ -3270,6 +3538,140 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 748994307}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &769456209
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.9900002
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201641, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: racistSlurs.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: interestingRegion
+      value: 
+      objectReference: {fileID: 1235627975}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: racistSlurs.Array.data[0]
+      value: God damn natives!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: racistSlurs.Array.data[1]
+      value: Go away ya bow slinging fuck!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: racistSlurs.Array.data[2]
+      value: This is my vacation!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: racistSlurs.Array.data[3]
+      value: Stop bothering me, Scum!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: racistSlurs.Array.data[4]
+      value: Scum!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: racistSlurs.Array.data[5]
+      value: "What do you want to sell, hombr\xE9?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: racistSlurs.Array.data[6]
+      value: You aint no calling me fat skinny boy!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: interactRange
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201655, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_Name
+      value: Jenkare (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9124832669592998149, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a027cb4fbd4e59b49b2aceaddd287907, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 38b91c801f7e5214db7ce5ddb2a1193e, type: 3}
 --- !u!1001 &771776155
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3345,6 +3747,140 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 771776155}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &775657624
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.9900002
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201641, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: racistSlurs.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: interestingRegion
+      value: 
+      objectReference: {fileID: 1235627975}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: racistSlurs.Array.data[0]
+      value: God damn natives!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: racistSlurs.Array.data[1]
+      value: Go away ya bow slinging fuck!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: racistSlurs.Array.data[2]
+      value: This is my vacation!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: racistSlurs.Array.data[3]
+      value: Stop bothering me, Scum!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: racistSlurs.Array.data[4]
+      value: Scum!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: racistSlurs.Array.data[5]
+      value: "What do you want to sell, hombr\xE9?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: racistSlurs.Array.data[6]
+      value: You aint no calling me fat skinny boy!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: interactRange
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201655, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_Name
+      value: Jenkare (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9124832669592998149, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a027cb4fbd4e59b49b2aceaddd287907, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 38b91c801f7e5214db7ce5ddb2a1193e, type: 3}
 --- !u!1 &818370561
 GameObject:
   m_ObjectHideFlags: 0
@@ -6438,6 +6974,140 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1659989342}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1673332303
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.9900002
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201640, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201641, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: racistSlurs.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: interestingRegion
+      value: 
+      objectReference: {fileID: 1235627975}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: racistSlurs.Array.data[0]
+      value: God damn natives!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: racistSlurs.Array.data[1]
+      value: Go away ya bow slinging fuck!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: racistSlurs.Array.data[2]
+      value: This is my vacation!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: racistSlurs.Array.data[3]
+      value: Stop bothering me, Scum!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: racistSlurs.Array.data[4]
+      value: Scum!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: racistSlurs.Array.data[5]
+      value: "What do you want to sell, hombr\xE9?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: racistSlurs.Array.data[6]
+      value: You aint no calling me fat skinny boy!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: interactRange
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201655, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_Name
+      value: Jenkare (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9124832669592998149, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a027cb4fbd4e59b49b2aceaddd287907, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 38b91c801f7e5214db7ce5ddb2a1193e, type: 3}
 --- !u!1 &1707732941
 GameObject:
   m_ObjectHideFlags: 0
