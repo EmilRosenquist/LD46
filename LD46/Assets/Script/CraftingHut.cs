@@ -31,6 +31,45 @@ public class CraftingRecipeDatabase
     {
         return craftingRecipes.Find(recipe => recipe.recipeTitle == title);
     }
+    public List<CraftingRecipe> GetCraftingRecipes()
+    {
+        List<CraftingRecipe> unlocked = new List<CraftingRecipe>();
+        foreach(var recipe in craftingRecipes)
+        {
+            if(recipe.unlocked)
+            {
+                unlocked.Add(recipe);
+            }
+        }
+        return unlocked;
+    }
+    public List<CraftingRecipe> GetPossibleRecipes(Inventory inventory)
+    {
+        List<CraftingRecipe> possible = new List<CraftingRecipe>();
+        var items = inventory.GetItems();
+        foreach (var recipe in craftingRecipes)
+        {
+            if (recipe.unlocked)
+            {
+                int possibles = 0;
+                foreach (var material in recipe.requiredMaterials)
+                {
+                    if(items.ContainsKey(material.Key))
+                    {
+                        if(items[material.Key] >= material.Value)
+                        {
+                            possibles++;
+                        }
+                    }
+                }
+                if(possibles == recipe.requiredMaterials.Count)
+                {
+                    possible.Add(recipe);
+                }
+            }
+        }
+        return possible;
+    }
 }
 
 public class CraftingHut : MonoBehaviour, IMouseInteractable
