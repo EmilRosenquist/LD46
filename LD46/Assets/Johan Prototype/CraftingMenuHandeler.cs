@@ -10,8 +10,8 @@ public class CraftingMenuHandeler : MonoBehaviour, IToolTipable
     [SerializeField] private Inventory inventory;
     [SerializeField] private GameObject recipesDrawer;
     [SerializeField] private TextMeshProUGUI tooltipTMP;
-    Dictionary<int, GameObject> idButtonPair = new Dictionary<int, GameObject>();
-    Dictionary<GameObject, int> buttonIdPair = new Dictionary<GameObject, int>();
+    Dictionary<CraftingRecipe, GameObject> recipeButtonPair = new Dictionary<CraftingRecipe, GameObject>();
+    Dictionary<GameObject, CraftingRecipe> buttonRecipePair = new Dictionary<GameObject, CraftingRecipe>();
     private bool currentlyOpen;
 
     private void Start()
@@ -32,7 +32,7 @@ public class CraftingMenuHandeler : MonoBehaviour, IToolTipable
         List<CraftingRecipe> availableRecipes = CraftingRecipeDatabase.GetPossibleRecipes(inventory);
         for (int i = 0; i < unlockedRecipes.Count; i++)
         {
-            if (!idButtonPair.ContainsKey(unlockedRecipes[i].itemId))
+            if (!recipeButtonPair.ContainsKey(unlockedRecipes[i]))
             {
                 GameObject r = Instantiate(slot);
                 r.transform.SetParent(recipesDrawer.transform);
@@ -40,18 +40,16 @@ public class CraftingMenuHandeler : MonoBehaviour, IToolTipable
                 Item item = ItemDatabase.GetItem(unlockedRecipes[i].itemId);
                 r.transform.GetChild(0).GetComponent<Image>().sprite = item.mIconSprite;
                 r.transform.GetChild(0).GetComponent<Image>().color = new Color(1f, 0f, 0f, 0.2f);
-                r.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = "KUK";
-                idButtonPair.Add(item.mId, r);
-                buttonIdPair.Add(r, item.mId);
+                recipeButtonPair.Add(unlockedRecipes[i], r);
+                buttonRecipePair.Add(r, unlockedRecipes[i]);
                 r.GetComponent<ToolTipHandler>().SetTooltipSource(this);
             }
         }
         for (int i = 0; i < availableRecipes.Count; i++)
         {
-            if (idButtonPair.ContainsKey(availableRecipes[i].itemId))
+            if (recipeButtonPair.ContainsKey(availableRecipes[i]))
             {
-                idButtonPair[availableRecipes[i].itemId].transform.GetChild(0).GetComponent<Image>().color = new Color(1f, 1f, 1f, 1f);
-                idButtonPair[availableRecipes[i].itemId].transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = "OBROR";
+                recipeButtonPair[availableRecipes[i]].transform.GetChild(0).GetComponent<Image>().color = new Color(1f, 1f, 1f, 1f);
             }
         }
     }
@@ -65,10 +63,22 @@ public class CraftingMenuHandeler : MonoBehaviour, IToolTipable
 
     public void ShowToolTip(GameObject slot)
     {
-        if (buttonIdPair.ContainsKey(slot))
+        if (buttonRecipePair.ContainsKey(slot))
         {
-
-            tooltipTMP.text = "Craft " + ItemDatabase.GetItem(buttonIdPair[slot]).mTitle + " with X amounts of Y" ;
+            List<string> mats = new List<string>();
+            foreach(var matPair in buttonRecipePair[slot].requiredMaterials)
+            {
+                print(matPair);
+                mats.Add(matPair.Value + " amount of " + ItemDatabase.GetItem(matPair.Key).mTitle);
+            }
+            string toolTip = "Craft " + ItemDatabase.GetItem(buttonRecipePair[slot].itemId).mTitle + " ";
+            
+            for(int i = 0; i < mats.Count; i++)
+            {
+                toolTip += mats[i];
+                if (i != mats.Count - 1) toolTip += " and ";
+            }
+            tooltipTMP.text = toolTip;
         }
     }
 
