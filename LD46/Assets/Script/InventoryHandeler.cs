@@ -8,12 +8,9 @@ public class InventoryHandeler : MonoBehaviour, IToolTipable
 {
     [SerializeField] private Inventory inventory;
     [SerializeField] private GameObject FullBasketInventory;
-    [SerializeField] private TextMeshProUGUI tooltipTMP;
     private bool currentlyOpen;
     private List<GameObject> backPackSlots = new List<GameObject>();
     Dictionary<GameObject, Item> buttonItemPair = new Dictionary<GameObject, Item>();
-
-
 
 
     // Start is called before the first frame update
@@ -23,7 +20,7 @@ public class InventoryHandeler : MonoBehaviour, IToolTipable
         for (int i = 0; i < FullBasketInventory.transform.childCount; i++)
         {
             backPackSlots.Add(FullBasketInventory.transform.GetChild(i).gameObject);
-            backPackSlots[i].GetComponent<ToolTipHandler>().SetTooltipSource(this);
+            backPackSlots[i].GetComponent<MenuSlot>().SetTooltipSource(this);
         }
         if (currentlyOpen) ToggleInventoryWindow();
     }
@@ -75,11 +72,12 @@ public class InventoryHandeler : MonoBehaviour, IToolTipable
     public void ShowToolTip(GameObject slot)
     {
         if(buttonItemPair.ContainsKey(slot))
-            tooltipTMP.text = buttonItemPair[slot].mTitle;
+            //tooltipTMP.text = buttonItemPair[slot].mTitle;
+            ToolTipHandler.instance.SetText(buttonItemPair[slot].mTitle);
     }
 
     public void HideToolTip(GameObject slot)
     {
-        tooltipTMP.text = "";
+        //tooltipTMP.text = "";
     }
 }

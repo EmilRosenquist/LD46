@@ -9,7 +9,6 @@ public class CraftingMenuHandeler : MonoBehaviour, IToolTipable, ICraftClick
     [SerializeField] private GameObject slot;
     [SerializeField] private Inventory inventory;
     [SerializeField] private GameObject recipesDrawer;
-    [SerializeField] private TextMeshProUGUI tooltipTMP;
     Dictionary<CraftingRecipe, GameObject> recipeButtonPair = new Dictionary<CraftingRecipe, GameObject>();
     Dictionary<GameObject, CraftingRecipe> buttonRecipePair = new Dictionary<GameObject, CraftingRecipe>();
     private bool currentlyOpen;
@@ -42,8 +41,8 @@ public class CraftingMenuHandeler : MonoBehaviour, IToolTipable, ICraftClick
                 r.transform.GetChild(0).GetComponent<Image>().color = new Color(1f, 0f, 0f, 0.2f);
                 recipeButtonPair.Add(unlockedRecipes[i], r);
                 buttonRecipePair.Add(r, unlockedRecipes[i]);
-                r.GetComponent<ToolTipHandler>().SetTooltipSource(this);
-                r.GetComponent<ToolTipHandler>().SetItemCraftable(this);
+                r.GetComponent<MenuSlot>().SetTooltipSource(this);
+                r.GetComponent<MenuSlot>().SetItemCraftable(this);
             }
         }
         for (int i = 0; i < availableRecipes.Count; i++)
@@ -77,13 +76,14 @@ public class CraftingMenuHandeler : MonoBehaviour, IToolTipable, ICraftClick
                 toolTip += mats[i];
                 if (i != mats.Count - 1) toolTip += " and ";
             }
-            tooltipTMP.text = toolTip;
+            //tooltipTMP.text = toolTip;
+            ToolTipHandler.instance.SetText(toolTip);
         }
     }
 
     public void HideToolTip(GameObject slot)
     {
-        tooltipTMP.text = "";
+        //tooltipTMP.text = "";
     }
 
     public void CraftItem(GameObject slot)

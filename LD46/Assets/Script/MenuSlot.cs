@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class ToolTipHandler : MonoBehaviour
+public class MenuSlot : MonoBehaviour
 {
     public void SetTooltipSource(IToolTipable TooltipSource)
     {
