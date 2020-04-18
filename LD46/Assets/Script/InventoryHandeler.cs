@@ -11,7 +11,7 @@ public class InventoryHandeler : MonoBehaviour, IToolTipable
     [SerializeField] private TextMeshProUGUI tooltipTMP;
     private bool currentlyOpen;
     private List<GameObject> backPackSlots = new List<GameObject>();
-    Dictionary<GameObject, Item> buttonItemDict = new Dictionary<GameObject, Item>();
+    Dictionary<GameObject, Item> buttonItemPair = new Dictionary<GameObject, Item>();
 
 
 
@@ -50,7 +50,7 @@ public class InventoryHandeler : MonoBehaviour, IToolTipable
     void UpdateInventory()
     {
         Dictionary<int, int> items = inventory.GetItems();
-
+        buttonItemPair.Clear();
         for (int j = 0; j < backPackSlots.Count; j++)
         {
             backPackSlots[j].transform.GetChild(0).GetComponent<Image>().color = new Color(1f, 1f, 1f, 0f);
@@ -61,7 +61,7 @@ public class InventoryHandeler : MonoBehaviour, IToolTipable
         foreach(int key in items.Keys)
         {
             Item item = ItemDatabase.GetItem(key);
-            //buttonItemDict.Add()
+            buttonItemPair.Add(backPackSlots[i], item);
             backPackSlots[i].transform.GetChild(0).GetComponent<Image>().sprite = item.mIconSprite;
             backPackSlots[i].transform.GetChild(0).GetComponent<Image>().color = new Color(1f, 1f, 1f, 1f);
             backPackSlots[i].transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = items[key].ToString();
@@ -71,7 +71,8 @@ public class InventoryHandeler : MonoBehaviour, IToolTipable
 
     public void ShowToolTip(GameObject slot)
     {
-        tooltipTMP.text = "TOOLTIP PLACEHOLDER";
+        if(buttonItemPair.ContainsKey(slot))
+            tooltipTMP.text = buttonItemPair[slot].mTitle;
     }
 
     public void HideToolTip(GameObject slot)
