@@ -43,3 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8363d78d0e39e6e48b075d030aa372cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxTimeBetweenSpawns: 100
+  dudesToSpawn:
+  - {fileID: 1164202642274201655, guid: 38b91c801f7e5214db7ce5ddb2a1193e, type: 3}
+  interestingRegion: {fileID: 0}

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class JenkarController : MonoBehaviour, IMouseInteractable
+public class JenkarController : MonoBehaviour, IMouseInteractable, IEnemy
 {
     [SerializeField] private GameObject interestingRegion;
     [SerializeField] private float walkSpeed = 7;
@@ -30,30 +30,24 @@ public class JenkarController : MonoBehaviour, IMouseInteractable
     // Update is called once per frame
     void Update()
     {
-        if (happyness > 0)
+
+        if (roaming)
         {
-            if (roaming)
+            stuckTimer -= Time.deltaTime;
+            if (stuckTimer < 0)
             {
-                stuckTimer -= Time.deltaTime;
-                if (stuckTimer < 0)
-                {
-                    stuckTimer = 1.0f;
-                    if (checkIfStuck()) target = GenerateTarget();
-                }
-                if (Vector3.Distance(transform.position, target) < reachLim)
-                {
-                    target = GenerateTarget();
-                }
-                Vector3 moveDir = (target - transform.position).normalized;
-                transform.forward = moveDir;
-                cc.Move(moveDir * walkSpeed * Time.deltaTime);
+                stuckTimer = 1.0f;
+                if (checkIfStuck()) target = GenerateTarget();
             }
+            if (Vector3.Distance(transform.position, target) < reachLim)
+            {
+                target = GenerateTarget();
+            }
+            Vector3 moveDir = (target - transform.position).normalized;
+            transform.forward = moveDir;
+            cc.Move(moveDir * walkSpeed * Time.deltaTime);
         }
-        else
-        {
-            //Hotellet
-            Destroy(gameObject);
-        }
+        
     }
 
     Vector3 GenerateTarget()
@@ -90,13 +84,24 @@ public class JenkarController : MonoBehaviour, IMouseInteractable
         if (Vector3.Distance(transform.position, position) < interactRange)
         {
             int index = Random.Range(0, racistSlurs.Count);
-            ToolTipHandler.instance.SetText(racistSlurs[index]);
             happyness -= 1;
+            if(happyness>0)
+                ToolTipHandler.instance.SetText(racistSlurs[index]);
+            else
+            {
+                ToolTipHandler.instance.SetText("UUUURHGH, Im going back to McDonalds!");
+                Destroy(gameObject);
+            }
         }
     }
 
     public string GetText()
     {
         return "God damn natives!";
+    }
+
+    public void SetRegion(GameObject region)
+    {
+        interestingRegion = region;
     }
 }

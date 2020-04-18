@@ -12,3 +12,8 @@ public interface ICraftClick
 {
     void CraftItem(GameObject slot);
 }
+
+public interface IEnemy
+{
+    void SetRegion(GameObject region);
+}
