@@ -11,7 +11,8 @@ public class InventoryHandeler : MonoBehaviour, IToolTipable
     [SerializeField] private TextMeshProUGUI tooltipTMP;
     private bool currentlyOpen;
     private List<GameObject> backPackSlots = new List<GameObject>();
-    
+    Dictionary<GameObject, Item> buttonItemDict = new Dictionary<GameObject, Item>();
+
 
 
 
