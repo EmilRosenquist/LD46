@@ -58,7 +58,8 @@ public class CameraInteracter : MonoBehaviour
     bool GetHit(out RaycastHit hit)
     {
         var ray = mCam.ScreenPointToRay(Input.mousePosition);
-        return Physics.Raycast(ray, out hit);
+        Debug.DrawRay(mCam.transform.position, ray.direction * 100, Color.red);
+        return Physics.Raycast(ray, out hit, 100.0f);
     }
     IMouseInteractable GetMouseInteractable(RaycastHit hit)
     {

@@ -2,16 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class JenkarController : MonoBehaviour
+public class JenkarController : MonoBehaviour, IMouseInteractable
 {
     [SerializeField] private GameObject interestingRegion;
     [SerializeField] private float walkSpeed = 7;
     [SerializeField] private bool roaming = true;
+    [SerializeField] private float interactRange = 4;
     private float reachLim = 0.5f;
     private CharacterController cc;
     private float timeStuck = 1.0f;
     private float stuckTimer = 1.0f;
     Vector3 stuckPos;
+
+    [SerializeField] private List<string> racistSlurs;
+
+    [SerializeField] private int happyness = 10;
 
     Vector3 target;
     // Start is called before the first frame update
@@ -25,21 +30,29 @@ public class JenkarController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (roaming)
+        if (happyness > 0)
         {
-            stuckTimer -= Time.deltaTime;
-            if (stuckTimer < 0)
+            if (roaming)
             {
-                stuckTimer = 1.0f;
-                if (checkIfStuck()) target = GenerateTarget();
+                stuckTimer -= Time.deltaTime;
+                if (stuckTimer < 0)
+                {
+                    stuckTimer = 1.0f;
+                    if (checkIfStuck()) target = GenerateTarget();
+                }
+                if (Vector3.Distance(transform.position, target) < reachLim)
+                {
+                    target = GenerateTarget();
+                }
+                Vector3 moveDir = (target - transform.position).normalized;
+                transform.forward = moveDir;
+                cc.Move(moveDir * walkSpeed * Time.deltaTime);
             }
-            if (Vector3.Distance(transform.position, target) < reachLim)
-            {
-                target = GenerateTarget();
-            }
-            Vector3 moveDir = (target - transform.position).normalized;
-            transform.forward = moveDir;
-            cc.Move(moveDir * walkSpeed * Time.deltaTime);
+        }
+        else
+        {
+            //Hotellet
+            Destroy(gameObject);
         }
     }
 
@@ -72,5 +85,18 @@ public class JenkarController : MonoBehaviour
         return false;
     }
 
+    public void OnPress(Vector3 position, Inventory inventory)
+    {
+        if (Vector3.Distance(transform.position, position) < interactRange)
+        {
+            int index = Random.Range(0, racistSlurs.Count);
+            ToolTipHandler.instance.SetText(racistSlurs[index]);
+            happyness -= 1;
+        }
+    }
 
+    public string GetText()
+    {
+        return "God damn natives!";
+    }
 }

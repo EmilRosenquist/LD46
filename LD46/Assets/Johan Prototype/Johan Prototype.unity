@@ -1056,6 +1056,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 154725758}
+  - component: {fileID: 154725759}
   m_Layer: 0
   m_Name: Hut (3)
   m_TagString: Untagged
@@ -1078,6 +1079,19 @@ Transform:
   m_Father: {fileID: 2035901142}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &154725759
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154725757}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.5, y: 3, z: 10.5}
+  m_Center: {x: 0, y: 1.5, z: 0}
 --- !u!1 &219291931
 GameObject:
   m_ObjectHideFlags: 0
@@ -3283,6 +3297,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 818370562}
+  - component: {fileID: 818370563}
   m_Layer: 0
   m_Name: Hut (2)
   m_TagString: Untagged
@@ -3305,6 +3320,19 @@ Transform:
   m_Father: {fileID: 2035901142}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &818370563
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818370561}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.5, y: 3, z: 10.5}
+  m_Center: {x: 0, y: 1.5, z: 0}
 --- !u!1001 &822827818
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8075,6 +8103,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2118950947}
+  - component: {fileID: 2118950948}
   m_Layer: 0
   m_Name: Hut (1)
   m_TagString: Untagged
@@ -8097,6 +8126,19 @@ Transform:
   m_Father: {fileID: 2035901142}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2118950948
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118950946}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.5, y: 3, z: 10.5}
+  m_Center: {x: 0, y: 1.5, z: 0}
 --- !u!1 &2136086138
 GameObject:
   m_ObjectHideFlags: 0
@@ -8200,6 +8242,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2141158698}
+  - component: {fileID: 2141158699}
   m_Layer: 0
   m_Name: Hut
   m_TagString: Untagged
@@ -8222,6 +8265,19 @@ Transform:
   m_Father: {fileID: 2035901142}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2141158699
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141158697}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.5, y: 3, z: 10.5}
+  m_Center: {x: 0, y: 1.5, z: 0}
 --- !u!1001 &352947787289354532
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8422,11 +8478,66 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201641, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: racistSlurs.Array.size
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
         type: 3}
       propertyPath: interestingRegion
       value: 
       objectReference: {fileID: 1235627975}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: racistSlurs.Array.data[0]
+      value: God damn natives!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: racistSlurs.Array.data[1]
+      value: Go away ya bow slinging fuck!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: racistSlurs.Array.data[2]
+      value: This is my vacation!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: racistSlurs.Array.data[3]
+      value: Stop bothering me, Scum!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: racistSlurs.Array.data[4]
+      value: Scum!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: racistSlurs.Array.data[5]
+      value: "What do you want to sell, hombr\xE9?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: racistSlurs.Array.data[6]
+      value: You aint no calling me fat skinny boy!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
+        type: 3}
+      propertyPath: interactRange
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1164202642274201655, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
         type: 3}
       propertyPath: m_Name
