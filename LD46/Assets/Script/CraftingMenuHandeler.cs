@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class CraftingMenuHandeler : MonoBehaviour, IToolTipable
+public class CraftingMenuHandeler : MonoBehaviour, IToolTipable, ICraftClick
 {
     [SerializeField] private GameObject slot;
     [SerializeField] private Inventory inventory;
@@ -43,6 +43,7 @@ public class CraftingMenuHandeler : MonoBehaviour, IToolTipable
                 recipeButtonPair.Add(unlockedRecipes[i], r);
                 buttonRecipePair.Add(r, unlockedRecipes[i]);
                 r.GetComponent<ToolTipHandler>().SetTooltipSource(this);
+                r.GetComponent<ToolTipHandler>().SetItemCraftable(this);
             }
         }
         for (int i = 0; i < availableRecipes.Count; i++)
@@ -83,5 +84,30 @@ public class CraftingMenuHandeler : MonoBehaviour, IToolTipable
     public void HideToolTip(GameObject slot)
     {
         tooltipTMP.text = "";
+    }
+
+    public void CraftItem(GameObject slot)
+    {
+        if (buttonRecipePair.ContainsKey(slot))
+        {
+            List<CraftingRecipe> availableRecipes = CraftingRecipeDatabase.GetPossibleRecipes(inventory);
+
+            if (availableRecipes.Contains(buttonRecipePair[slot]))
+            {
+                Debug.Log("Crafting " + ItemDatabase.GetItem(buttonRecipePair[slot].itemId).mTitle);
+                foreach (var matPair in buttonRecipePair[slot].requiredMaterials)
+                {
+                    
+                    inventory.RemoveItemid(matPair.Key, matPair.Value);
+                }
+                inventory.AddItemId(buttonRecipePair[slot].itemId, 1);
+            }
+            else
+            {
+                Debug.Log("Not enough Mats");
+            }
+        }
+
+
     }
 }

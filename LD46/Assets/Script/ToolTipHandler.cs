@@ -20,4 +20,14 @@ public class ToolTipHandler : MonoBehaviour
         trigger.triggers.Add(exit);
     }
 
+    public void SetItemCraftable(ICraftClick craftMenu)
+    {
+        EventTrigger trigger = GetComponent<EventTrigger>();
+
+        EventTrigger.Entry entry = new EventTrigger.Entry();
+        entry.eventID = EventTriggerType.PointerClick;
+        entry.callback.AddListener((eventData) => { craftMenu.CraftItem(gameObject); });
+        trigger.triggers.Add(entry);
+    }
+
 }
