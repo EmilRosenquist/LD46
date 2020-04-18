@@ -4,13 +4,43 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    public List<Item> mItems = new List<Item>();
+    private Dictionary<int, int> mItems = new Dictionary<int, int>();
     void Start()
     {
-        mItems.Add(ItemDatabase.GetItem(1));
     }
 
     void Update()
     {
+    }
+    Dictionary<int, int> GetItems()
+    {
+        return mItems;
+    }
+    public void AddItemId(int id, int amount)
+    {
+        if(mItems.ContainsKey(id))
+        {
+            mItems[id] += amount;
+        }
+        else
+        {
+            mItems.Add(id, amount);
+        }
+    }
+    
+    public void RemoveItemid(int id, int amount)
+    {
+        if(mItems.ContainsKey(id))
+        {
+            mItems[id] -= amount;
+            if (mItems[id] < 0)
+            {
+                Debug.LogError("Not enough amount of item to remove");
+            }
+        }
+        else
+        {
+            Debug.LogError("Item does not exists in invetory");
+        }
     }
 }

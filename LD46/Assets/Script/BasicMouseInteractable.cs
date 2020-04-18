@@ -13,4 +13,14 @@ public class BasicMouseInteractable : MonoBehaviour, IMouseInteractable
     {
         Debug.Log("Pressing on :" + transform.name);
     }
+
+    public void OnPress(Inventory inventory)
+    {
+        var itemObject = transform.GetComponent<ItemObject>();
+        if (itemObject != null)
+        {
+            inventory.AddItemId(itemObject.itemId, 1);
+        }
+        Destroy(transform.gameObject);
+    }
 }

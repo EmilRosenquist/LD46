@@ -159,6 +159,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 583335845551008822, guid: d4d8779a26716414b857b2957f5d1ddb,
+        type: 3}
+      propertyPath: playerInventory
+      value: 
+      objectReference: {fileID: 1517090637}
     - target: {fileID: 7771133524238711024, guid: d4d8779a26716414b857b2957f5d1ddb,
         type: 3}
       propertyPath: dudeToFollow
@@ -223,6 +228,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FollowCam
+      objectReference: {fileID: 0}
+    - target: {fileID: 7771133524238711028, guid: d4d8779a26716414b857b2957f5d1ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4d8779a26716414b857b2957f5d1ddb, type: 3}
@@ -497,11 +507,11 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1753352037}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1517090633
+--- !u!114 &1517090637 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 2684587172880273046, guid: 4b6fd03ce516bb34fba184c93623e775,
+    type: 3}
+  m_PrefabInstance: {fileID: 1753352037}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1517090632}
   m_Enabled: 1
@@ -552,24 +562,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1750751158 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7771133524238711028, guid: d4d8779a26716414b857b2957f5d1ddb,
-    type: 3}
-  m_PrefabInstance: {fileID: 519434909}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1750751163
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1750751158}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c492e2d10a6f2e4bbeb41c2b14cf8b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1753352037
 PrefabInstance:
   m_ObjectHideFlags: 0
