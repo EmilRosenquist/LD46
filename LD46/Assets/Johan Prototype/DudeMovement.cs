@@ -6,7 +6,7 @@ public class DudeMovement : MonoBehaviour
 {
     [SerializeField] private float maxVel = 2.0f;
     private CharacterController cc; 
-    private Vector3 heightPoint = new Vector3(0, 3, 0);
+    private Vector3 heightPoint = new Vector3(0, 10, 0);
 
 
     // Start is called before the first frame update
@@ -33,7 +33,7 @@ public class DudeMovement : MonoBehaviour
 
     void RotateDude(Vector3 moveDir)
     {
-        gameObject.transform.forward = moveDir;
+        transform.forward = moveDir;
     }
     
     void GetMovePos(Vector3 moveDir)
@@ -43,6 +43,16 @@ public class DudeMovement : MonoBehaviour
 
     void FallDown()
     {
-        
+        int layerMask = 1 << 9;
+
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position + heightPoint, transform.TransformDirection(Vector3.down), out hit, Mathf.Infinity, layerMask))
+        {
+            transform.position = hit.point;
+        }
+        else
+        {
+            Debug.LogWarning("No ground under Dude");
+        }
     }
 }
