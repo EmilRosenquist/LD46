@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4496783081164382563}
   - component: {fileID: 7879963477308202394}
   m_Layer: 0
-  m_Name: grass_02
+  m_Name: grass_02_prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -58,7 +58,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -876546973899608171, guid: 5262bd1c8f4dd7f459e0a5b7d84361ae, type: 3}
+  - {fileID: 2100000, guid: 274f0c3b30757a54b868b624f0c66cde, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

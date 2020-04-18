@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2577017314666187999}
   - component: {fileID: 8142489380238290982}
   m_Layer: 0
-  m_Name: jungleplant_03
+  m_Name: jungleplant_03_prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -58,7 +58,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -876546973899608171, guid: 851d728aee1fcf2438ed08b935f322c3, type: 3}
+  - {fileID: 2100000, guid: 274f0c3b30757a54b868b624f0c66cde, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
