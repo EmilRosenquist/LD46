@@ -20,18 +20,18 @@ public class CraftingRecipe
 public class CraftingRecipeDatabase
 {
     public static List<CraftingRecipe> craftingRecipes = new List<CraftingRecipe>();
-    CraftingRecipeDatabase()
+    public CraftingRecipeDatabase()
     {
         craftingRecipes = new List<CraftingRecipe>()
         {
-            new CraftingRecipe("Fence", 4, new Dictionary<int, int>{{2,5}})
+            new CraftingRecipe("Fence", 4, new Dictionary<int, int>{{2,5}}, true)
         };
     }
     public static CraftingRecipe GetRecipe(string title)
     {
         return craftingRecipes.Find(recipe => recipe.recipeTitle == title);
     }
-    public List<CraftingRecipe> GetCraftingRecipes()
+    public static List<CraftingRecipe> GetCraftingRecipes()
     {
         List<CraftingRecipe> unlocked = new List<CraftingRecipe>();
         foreach(var recipe in craftingRecipes)
@@ -43,7 +43,7 @@ public class CraftingRecipeDatabase
         }
         return unlocked;
     }
-    public List<CraftingRecipe> GetPossibleRecipes(Inventory inventory)
+    public static List<CraftingRecipe> GetPossibleRecipes(Inventory inventory)
     {
         List<CraftingRecipe> possible = new List<CraftingRecipe>();
         var items = inventory.GetItems();
@@ -75,6 +75,13 @@ public class CraftingRecipeDatabase
 public class CraftingHut : MonoBehaviour, IMouseInteractable
 {
     public int craftRange = 10;
+    CraftingRecipeDatabase mCraftingRecipeDatabase;
+
+    public void Awake()
+    {
+        mCraftingRecipeDatabase = new CraftingRecipeDatabase();
+    }
+
     public string GetText()
     {
         return "Use this hut to craft stuff.";
@@ -84,6 +91,7 @@ public class CraftingHut : MonoBehaviour, IMouseInteractable
     {
         if(Vector3.Distance(transform.position, position) < craftRange)
         {
+            FindObjectOfType<CraftingMenuHandeler>().ToggleCraftingMenu();
             Debug.Log("Start craft away!");
         }
         else

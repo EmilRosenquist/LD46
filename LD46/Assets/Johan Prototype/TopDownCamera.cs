@@ -7,9 +7,8 @@ public class TopDownCamera : MonoBehaviour
     [SerializeField] private GameObject dudeToFollow;
     [SerializeField] private float closest = 5.0f;
     [SerializeField] private float furthest = 35.0f;
-    [SerializeField] private float rotAngle = 45.0f;
+    //[SerializeField] private float rotAngle = 45.0f;
     [SerializeField] private float DeadZoneDenominator = 6f;
-
 
     private float deadZone = 5.0f;
     private Vector3 ofset;
@@ -19,7 +18,6 @@ public class TopDownCamera : MonoBehaviour
     {
         ofset = gameObject.transform.position - dudeToFollow.transform.position;
         SetZoom(30);
-
         if (deadZone < 0) ofset *= -1;
     }
 

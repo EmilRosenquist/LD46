@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8655825052447422417}
   - component: {fileID: -3886855671458940072}
   - component: {fileID: -7780037098266806321}
+  - component: {fileID: 1520274360726974035}
   m_Layer: 10
   m_Name: Firefood
   m_TagString: Untagged
@@ -58,18 +59,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6358901df4f7b0541929d72378699ca3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!65 &3240669992749361389
+--- !u!65 &1520274360726974035
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9057233168443591693}
+  m_GameObject: {fileID: 6674003274021120550}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.02, y: 0.019999996, z: 0.019999998}
+  m_Size: {x: 0.24064617, y: 0.24043211, z: 0.65514296}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1049387651024033028
 PrefabInstance:
@@ -145,12 +146,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e996ab330a76c74c90892b699c7cb0d, type: 3}
---- !u!1 &9057233168443591693 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 9e996ab330a76c74c90892b699c7cb0d,
-    type: 3}
-  m_PrefabInstance: {fileID: 1049387651024033028}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5470352152723570206 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 9e996ab330a76c74c90892b699c7cb0d,
