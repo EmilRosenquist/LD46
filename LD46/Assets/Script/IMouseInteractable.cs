@@ -4,6 +4,6 @@ using UnityEngine;
 
 public interface IMouseInteractable
 {
-    void OnPress(Inventory inventory);
+    void OnPress(Vector3 position, Inventory inventory);
     string GetText();
 }

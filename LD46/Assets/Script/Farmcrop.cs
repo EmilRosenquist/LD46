@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Farmcrop : MonoBehaviour, IMouseInteractable
 {
+    public int farmRange = 2;
     public int cropItemId = 3;
     public float growRate = 1 / 100;
     public float currentGrowth = 0;
@@ -20,16 +21,23 @@ public class Farmcrop : MonoBehaviour, IMouseInteractable
         return "Crop is " + (currentGrowth / 1.0) * 100 + "% done.";
     }
 
-    public void OnPress(Inventory inventory)
+    public void OnPress(Vector3 position, Inventory inventory)
     {
-        if (currentGrowth >= 1)
+        if(Vector3.Distance(position, transform.position) < farmRange)
         {
-            inventory.AddItemId(cropItemId, 1);
-            Destroy(transform.gameObject);
+            if (currentGrowth >= 1)
+            {
+                inventory.AddItemId(cropItemId, 1);
+                Destroy(transform.gameObject);
+            }
+            else
+            {
+                Debug.Log("Crop not done");
+            }
         }
         else
         {
-            Debug.Log("Crop not done");
+            Debug.Log("To far away");
         }
     }
 }

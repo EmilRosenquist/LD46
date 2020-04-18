@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CameraInteracter : MonoBehaviour
 {
+    public Transform playerTransform;
     public Inventory playerInventory;
     private Camera mCam;
     void Start()
@@ -18,7 +19,7 @@ public class CameraInteracter : MonoBehaviour
             var mouseInteractable = GetMouseInteractable();
             if (mouseInteractable != null)
             {
-                mouseInteractable.OnPress(playerInventory);
+                mouseInteractable.OnPress(playerTransform.position, playerInventory);
             }
         }
         else if (MouseHasMoved())

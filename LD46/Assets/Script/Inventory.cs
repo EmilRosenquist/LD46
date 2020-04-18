@@ -5,13 +5,6 @@ using UnityEngine;
 public class Inventory : MonoBehaviour
 {
     private Dictionary<int, int> mItems = new Dictionary<int, int>();
-    void Start()
-    {
-    }
-
-    void Update()
-    {
-    }
     public Dictionary<int, int> GetItems()
     {
         return mItems;

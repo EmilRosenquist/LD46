@@ -9,7 +9,7 @@ public class BasicMouseInteractable : MonoBehaviour, IMouseInteractable
         return "Hovering over : " + transform.name;
     }
 
-    public void OnPress(Inventory inventory)
+    public void OnPress(Vector3 position, Inventory inventory)
     {
         var itemObject = transform.GetComponent<ItemObject>();
         if (itemObject != null)

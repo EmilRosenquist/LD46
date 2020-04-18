@@ -5,9 +5,4 @@ using UnityEngine;
 public class ItemObject : MonoBehaviour
 {
     public int itemId = 0;
-
-    void Update()
-    {
-
-    }
 }
