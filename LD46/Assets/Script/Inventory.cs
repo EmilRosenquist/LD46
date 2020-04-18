@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    private int selectedItem = 1;
+    private int selectedItem = -1;
     private Dictionary<int, int> mItems = new Dictionary<int, int>();
     public Dictionary<int, int> GetItems()
     {

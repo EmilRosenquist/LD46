@@ -157,6 +157,11 @@ PrefabInstance:
       propertyPath: playerTransform
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 583335845551008822, guid: d4d8779a26716414b857b2957f5d1ddb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7771133524238711024, guid: d4d8779a26716414b857b2957f5d1ddb,
         type: 3}
       propertyPath: dudeToFollow
