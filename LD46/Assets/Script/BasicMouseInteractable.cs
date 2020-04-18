@@ -9,11 +9,6 @@ public class BasicMouseInteractable : MonoBehaviour, IMouseInteractable
         return "Hovering over : " + transform.name;
     }
 
-    public void OnPress()
-    {
-        Debug.Log("Pressing on :" + transform.name);
-    }
-
     public void OnPress(Inventory inventory)
     {
         var itemObject = transform.GetComponent<ItemObject>();
