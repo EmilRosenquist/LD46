@@ -4,10 +4,11 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class InventoryHandeler : MonoBehaviour
+public class InventoryHandeler : MonoBehaviour, IToolTipable
 {
     [SerializeField] private Inventory inventory;
     [SerializeField] private GameObject FullBasketInventory;
+    [SerializeField] private TextMeshProUGUI tooltipTMP;
     private bool currentlyOpen;
     private List<GameObject> backPackSlots = new List<GameObject>();
     
@@ -19,7 +20,10 @@ public class InventoryHandeler : MonoBehaviour
     {
         currentlyOpen = FullBasketInventory.activeInHierarchy;
         for (int i = 0; i < FullBasketInventory.transform.childCount; i++)
+        {
             backPackSlots.Add(FullBasketInventory.transform.GetChild(i).gameObject);
+            backPackSlots[i].GetComponent<ToolTipHandler>().SetTooltipSource(this);
+        }
         if (currentlyOpen) ToggleInventoryWindow();
     }
 
@@ -61,5 +65,15 @@ public class InventoryHandeler : MonoBehaviour
             backPackSlots[i].transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = items[key].ToString();
             i++;
         }
+    }
+
+    public void ShowToolTip(GameObject slot)
+    {
+        tooltipTMP.text = "TOOLTIP PLACEHOLDER";
+    }
+
+    public void HideToolTip(GameObject slot)
+    {
+        tooltipTMP.text = "";
     }
 }
