@@ -26,6 +26,10 @@ public class InventoryHandeler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown("e"))
+        {
+            ToggleInventoryWindow();
+        }
         if (currentlyOpen)
         {
             UpdateInventory();
