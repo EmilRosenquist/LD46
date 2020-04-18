@@ -50,7 +50,6 @@ public class InventoryHandeler : MonoBehaviour, IToolTipable
     void UpdateInventory()
     {
         Dictionary<int, int> items = inventory.GetItems();
-        buttonItemPair.Clear();
         for (int j = 0; j < backPackSlots.Count; j++)
         {
             backPackSlots[j].transform.GetChild(0).GetComponent<Image>().color = new Color(1f, 1f, 1f, 0f);
@@ -58,14 +57,18 @@ public class InventoryHandeler : MonoBehaviour, IToolTipable
         }
 
         int i = 0;
+        buttonItemPair.Clear();
         foreach(int key in items.Keys)
         {
             Item item = ItemDatabase.GetItem(key);
-            buttonItemPair.Add(backPackSlots[i], item);
-            backPackSlots[i].transform.GetChild(0).GetComponent<Image>().sprite = item.mIconSprite;
-            backPackSlots[i].transform.GetChild(0).GetComponent<Image>().color = new Color(1f, 1f, 1f, 1f);
-            backPackSlots[i].transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = items[key].ToString();
-            i++;
+            if(items[key] > 0)
+            {
+                buttonItemPair.Add(backPackSlots[i], item);
+                backPackSlots[i].transform.GetChild(0).GetComponent<Image>().sprite = item.mIconSprite;
+                backPackSlots[i].transform.GetChild(0).GetComponent<Image>().color = new Color(1f, 1f, 1f, 1f);
+                backPackSlots[i].transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = items[key].ToString();
+                i++;
+            }
         }
     }
 
