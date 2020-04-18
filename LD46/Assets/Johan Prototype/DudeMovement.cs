@@ -8,7 +8,6 @@ public class DudeMovement : MonoBehaviour
     private CharacterController cc; 
     private Vector3 heightPoint = new Vector3(0, 10, 0);
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -19,9 +18,12 @@ public class DudeMovement : MonoBehaviour
     void Update()
     {
         Vector3 moveDir = GetMoveDirection();
-        RotateDude(moveDir);
-        GetMovePos(moveDir);
-        FallDown();
+        if(moveDir.sqrMagnitude > 0)
+        {
+            RotateDude(moveDir);
+            GetMovePos(moveDir);
+            FallDown();
+        }
     }
 
     Vector3 GetMoveDirection()
