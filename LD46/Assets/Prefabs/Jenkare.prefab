@@ -66,7 +66,17 @@ MonoBehaviour:
   interestingRegion: {fileID: 0}
   walkSpeed: 3
   roaming: 1
-  interactRange: 4
+  interactRange: 5
+  racistSlurs:
+  - God damn natives!
+  - Go away ya bow slinging fuck!
+  - This is my vacation!
+  - Stop bothering me, Scum!
+  - Scum!
+  - "What do you want to sell, hombr\xE9?"
+  - You aint no calling me fat skinny boy!
+  - Vote republican next time!
+  - Donald makes the economy strong, genius.
   happyness: 10
 --- !u!1001 &1164202643477939642
 PrefabInstance:
@@ -135,6 +145,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: char_american_male
       objectReference: {fileID: 0}
+    - target: {fileID: 7965177608422462655, guid: 3c00aaccd4421ba4bbb1602c6395616d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a027cb4fbd4e59b49b2aceaddd287907, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c00aaccd4421ba4bbb1602c6395616d, type: 3}
 --- !u!4 &6148153378171743904 stripped

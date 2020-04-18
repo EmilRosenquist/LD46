@@ -183,76 +183,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1164202642274201641, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
-        type: 3}
-      propertyPath: racistSlurs.Array.size
-      value: 7
-      objectReference: {fileID: 0}
     - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
         type: 3}
       propertyPath: interestingRegion
       value: 
       objectReference: {fileID: 1235627975}
-    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
-        type: 3}
-      propertyPath: racistSlurs.Array.data[0]
-      value: God damn natives!
-      objectReference: {fileID: 0}
-    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
-        type: 3}
-      propertyPath: racistSlurs.Array.data[1]
-      value: Go away ya bow slinging fuck!
-      objectReference: {fileID: 0}
-    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
-        type: 3}
-      propertyPath: racistSlurs.Array.data[2]
-      value: This is my vacation!
-      objectReference: {fileID: 0}
-    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
-        type: 3}
-      propertyPath: racistSlurs.Array.data[3]
-      value: Stop bothering me, Scum!
-      objectReference: {fileID: 0}
-    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
-        type: 3}
-      propertyPath: racistSlurs.Array.data[4]
-      value: Scum!
-      objectReference: {fileID: 0}
-    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
-        type: 3}
-      propertyPath: racistSlurs.Array.data[5]
-      value: "What do you want to sell, hombr\xE9?"
-      objectReference: {fileID: 0}
-    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
-        type: 3}
-      propertyPath: racistSlurs.Array.data[6]
-      value: You aint no calling me fat skinny boy!
-      objectReference: {fileID: 0}
-    - target: {fileID: 1164202642274201642, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
-        type: 3}
-      propertyPath: interactRange
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 1164202642274201655, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
         type: 3}
       propertyPath: m_Name
       value: Jenkare (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 9124832669592998149, guid: 38b91c801f7e5214db7ce5ddb2a1193e,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a027cb4fbd4e59b49b2aceaddd287907, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38b91c801f7e5214db7ce5ddb2a1193e, type: 3}
 --- !u!1001 &25139837
@@ -2364,6 +2304,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 352947786736204388, guid: 1300ad50e727ef047bfe9cbec747f5bb,
+        type: 3}
+      propertyPath: broken
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1300ad50e727ef047bfe9cbec747f5bb, type: 3}
@@ -6428,6 +6373,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 352947786736204388, guid: 1300ad50e727ef047bfe9cbec747f5bb,
+        type: 3}
+      propertyPath: broken
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1300ad50e727ef047bfe9cbec747f5bb, type: 3}
 --- !u!4 &1549054299 stripped
@@ -9390,7 +9340,7 @@ PrefabInstance:
     - target: {fileID: 1902302669828653258, guid: dcf4a1dbd838ed842898e3354c5fe8a5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.041662235
       objectReference: {fileID: 0}
     - target: {fileID: 1902302669828653258, guid: dcf4a1dbd838ed842898e3354c5fe8a5,
         type: 3}
@@ -9400,27 +9350,27 @@ PrefabInstance:
     - target: {fileID: 1902302669828653258, guid: dcf4a1dbd838ed842898e3354c5fe8a5,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.06190604
       objectReference: {fileID: 0}
     - target: {fileID: 1902302669828653258, guid: dcf4a1dbd838ed842898e3354c5fe8a5,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1902302669828653258, guid: dcf4a1dbd838ed842898e3354c5fe8a5,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.7604658
       objectReference: {fileID: 0}
     - target: {fileID: 1902302669828653258, guid: dcf4a1dbd838ed842898e3354c5fe8a5,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1902302669828653258, guid: dcf4a1dbd838ed842898e3354c5fe8a5,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.64937806
       objectReference: {fileID: 0}
     - target: {fileID: 1902302669828653258, guid: dcf4a1dbd838ed842898e3354c5fe8a5,
         type: 3}
@@ -9435,7 +9385,7 @@ PrefabInstance:
     - target: {fileID: 1902302669828653258, guid: dcf4a1dbd838ed842898e3354c5fe8a5,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -99.011
       objectReference: {fileID: 0}
     - target: {fileID: 1902302669828653258, guid: dcf4a1dbd838ed842898e3354c5fe8a5,
         type: 3}
@@ -9516,6 +9466,11 @@ PrefabInstance:
       propertyPath: interestingRegion
       value: 
       objectReference: {fileID: 1235627975}
+    - target: {fileID: 9220382175787439805, guid: b39899cff7af57341b31d66f747d81f6,
+        type: 3}
+      propertyPath: maxTimeBetweenSpawns
+      value: 99
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b39899cff7af57341b31d66f747d81f6, type: 3}
 --- !u!1001 &7771133524568387679
