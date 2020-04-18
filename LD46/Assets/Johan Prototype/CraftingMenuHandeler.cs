@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class CraftingMenuHandeler : MonoBehaviour
 {
@@ -20,6 +21,7 @@ public class CraftingMenuHandeler : MonoBehaviour
 
     private void Update()
     {
+        if (currentlyOpen) UpdateCraftingMenu();
         if (currentlyOpen && Input.GetKeyDown(KeyCode.Escape)) ToggleCraftingMenu();
     }
 
@@ -38,6 +40,7 @@ public class CraftingMenuHandeler : MonoBehaviour
                 Item item = ItemDatabase.GetItem(unlockedRecipes[i].itemId);
                 r.transform.GetChild(0).GetComponent<Image>().sprite = item.mIconSprite;
                 r.transform.GetChild(0).GetComponent<Image>().color = new Color(1f, 1f, 1f, 0.2f);
+                r.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = "KUK";
                 idButtonPair.Add(item.mId, r);
             }
         }
@@ -46,6 +49,7 @@ public class CraftingMenuHandeler : MonoBehaviour
             if (idButtonPair.ContainsKey(availableRecipes[i].itemId))
             {
                 idButtonPair[availableRecipes[i].itemId].transform.GetChild(0).GetComponent<Image>().color = new Color(1f, 1f, 1f, 1f);
+                idButtonPair[availableRecipes[i].itemId].transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = "OBROR";
             }
         }
     }
