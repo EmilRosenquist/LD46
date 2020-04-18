@@ -99,7 +99,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dudeToFollow: {fileID: 0}
-  deadZone: 5
+  closest: 5
+  furthest: 35
   rotAngle: 45
 --- !u!114 &583335845551008822
 MonoBehaviour:
