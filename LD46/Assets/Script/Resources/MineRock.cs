@@ -2,10 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
+public struct DropRate
+{
+    public int mineralId;
+    public float dropChance;
+}
+
 public class MineRock : MonoBehaviour, IMouseInteractable
 {
     public int mineRange = 2;
-    public int stoneItemId = 1;
+    public List<DropRate> droprates;
 
     public string GetText()
     {
@@ -17,7 +24,17 @@ public class MineRock : MonoBehaviour, IMouseInteractable
         if (Vector3.Distance(position, transform.position) < mineRange)
         {
             //Todo Go into animation state.
-            inventory.AddItemId(stoneItemId, 1);
+            var random = Random.Range(0f, 1f);
+            foreach(var rate in droprates)
+            {
+                random -= rate.dropChance;
+                if(random <= 0)
+                {
+                    inventory.AddItemId(rate.mineralId, 1);
+                    break;
+                }
+            }
+
             Debug.Log("Mined stone");
         }
         else

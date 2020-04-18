@@ -24,7 +24,9 @@ public class ItemDatabase : MonoBehaviour
             new Item(1, "Stone", "Stone"),
             new Item(2, "Wood"),
             new Item(3, "Crop"),
-            new Item(4, "Fence", "Fence")
+            new Item(4, "Fence", "Fence"),
+            new Item(5, "Copper"),
+            new Item(6, "Iron")
         };
     }
 }

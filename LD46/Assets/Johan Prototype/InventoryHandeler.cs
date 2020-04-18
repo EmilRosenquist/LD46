@@ -55,7 +55,7 @@ public class InventoryHandeler : MonoBehaviour
         int i = 0;
         foreach(int key in items.Keys)
         {
-            Item item = ItemDatabase.GetItem(items[key]);
+            Item item = ItemDatabase.GetItem(key);
             backPackSlots[i].transform.GetChild(0).GetComponent<Image>().sprite = item.mIconSprite;
             backPackSlots[i].transform.GetChild(0).GetComponent<Image>().color = new Color(1f, 1f, 1f, 1f);
             backPackSlots[i].transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = items[key].ToString();

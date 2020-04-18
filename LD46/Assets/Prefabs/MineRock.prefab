@@ -46,7 +46,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mineRange: 5
-  stoneItemId: 1
+  droprates:
+  - mineralId: 1
+    dropChance: 0.7
+  - mineralId: 5
+    dropChance: 0.2
+  - mineralId: 6
+    dropChance: 0.1
 --- !u!65 &8793315867713228351
 BoxCollider:
   m_ObjectHideFlags: 0
