@@ -5167,7 +5167,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1598046512}
   - component: {fileID: 1598046511}
-  - component: {fileID: 1598046510}
+  - component: {fileID: 1598046513}
   m_Layer: 0
   m_Name: Dude
   m_TagString: Untagged
@@ -5175,20 +5175,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!136 &1598046510
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1598046509}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2.5
-  m_Direction: 1
-  m_Center: {x: 0, y: 1.25, z: -0.14}
 --- !u!114 &1598046511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5201,8 +5187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7e04d8645169e246b56daef16861ae9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxVel: 2
-  sprintMultiplier: 1.5
+  maxVel: 10
 --- !u!4 &1598046512
 Transform:
   m_ObjectHideFlags: 0
@@ -5218,6 +5203,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!143 &1598046513
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1598046509}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 2.5
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 1.25, z: 0}
 --- !u!1 &1644729342
 GameObject:
   m_ObjectHideFlags: 0
