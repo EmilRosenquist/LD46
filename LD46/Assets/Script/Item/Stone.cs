@@ -7,8 +7,4 @@ public class Stone : Item
     public Stone(int id, string title) : base(id, title)
     {
     }
-    public override void Use()
-    {
-        Debug.Log("Using stone");
-    }
 }

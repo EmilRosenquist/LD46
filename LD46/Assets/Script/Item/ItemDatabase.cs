@@ -21,9 +21,10 @@ public class ItemDatabase : MonoBehaviour
     {
         mItems = new List<Item>()
         {
-            new Stone(1, "Stone"),
+            new Item(1, "Stone", "Stone"),
             new Item(2, "Wood"),
-            new Item(3, "Crop")
+            new Item(3, "Crop"),
+            new Item(4, "Fence", "Fence")
         };
     }
 }

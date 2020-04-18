@@ -14,33 +14,57 @@ public class CameraInteracter : MonoBehaviour
 
     void Update()
     {
+        RaycastHit hit;
         if (Input.GetMouseButtonDown(0))
         {
-            var mouseInteractable = GetMouseInteractable();
-            if (mouseInteractable != null)
+            if(GetHit(out hit))
             {
-                mouseInteractable.OnPress(playerTransform.position, playerInventory);
+                var mouseInteractable = GetMouseInteractable(hit);
+                if (mouseInteractable != null)
+                {
+                    mouseInteractable.OnPress(playerTransform.position, playerInventory);
+                }
+            }
+        }
+        else if(Input.GetMouseButtonUp(0) && playerInventory.GetSelectedItem() > 0)
+        {
+            if (GetHit(out hit))
+            {
+                Item item = ItemDatabase.GetItem(playerInventory.GetSelectedItem());
+                if(item.mPrefab != null)
+                {
+                    GameObject instance = Instantiate(item.mPrefab, hit.point, Quaternion.identity);
+                }
             }
         }
         else if (MouseHasMoved())
         {
-            var mouseInteractable = GetMouseInteractable();
-            if (mouseInteractable != null)
+            if (GetHit(out hit))
             {
-                Debug.Log(mouseInteractable.GetText());
+                if(playerInventory.GetSelectedItem() > 0)
+                {
+                }
+                else
+                {
+                    var mouseInteractable = GetMouseInteractable(hit);
+                    if (mouseInteractable != null)
+                    {
+                        Debug.Log(mouseInteractable.GetText());
+                    }
+                }
             }
         }
     }
-    IMouseInteractable GetMouseInteractable()
+    bool GetHit(out RaycastHit hit)
     {
         var ray = mCam.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit;
-        if (Physics.Raycast(ray, out hit))
+        return Physics.Raycast(ray, out hit);
+    }
+    IMouseInteractable GetMouseInteractable(RaycastHit hit)
+    {
+        if (hit.transform.gameObject.layer == LayerMask.NameToLayer("MouseInteraction"))
         {
-            if (hit.transform.gameObject.layer == LayerMask.NameToLayer("MouseInteraction"))
-            {
-                return hit.transform.GetComponent<IMouseInteractable>();
-            }
+            return hit.transform.GetComponent<IMouseInteractable>();
         }
         return null;
     }

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
+    private int selectedItem = 1;
     private Dictionary<int, int> mItems = new Dictionary<int, int>();
     public Dictionary<int, int> GetItems()
     {
@@ -35,5 +36,9 @@ public class Inventory : MonoBehaviour
         {
             Debug.LogError("Item does not exists in invetory");
         }
+    }
+    public int GetSelectedItem()
+    {
+        return selectedItem;
     }
 }
