@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Stone : Item
 {
-    public Stone(int id, string title) : base(1, title)
+    public Stone(int id, string title) : base(id, title)
     {
     }
     public override void Use()
