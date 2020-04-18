@@ -44567,6 +44567,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1288279239}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1668494689 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5826961768954088293, guid: 5e6164f85b4ccc045a72d5009ba806c6,
+    type: 3}
+  m_PrefabInstance: {fileID: 1218852808}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1670225592 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1205144328905291973, guid: 7910c242d9137d14db81531afc9a5e69,
@@ -57410,6 +57416,14 @@ PrefabInstance:
       propertyPath: inventory
       value: 
       objectReference: {fileID: 1743503600}
+    - target: {fileID: 199694330, guid: c44447de5fda47e43b71d88a484630ca, type: 3}
+      propertyPath: dude
+      value: 
+      objectReference: {fileID: 1743503599}
+    - target: {fileID: 199694330, guid: c44447de5fda47e43b71d88a484630ca, type: 3}
+      propertyPath: craftingHut
+      value: 
+      objectReference: {fileID: 1668494689}
     - target: {fileID: 607237156916309561, guid: c44447de5fda47e43b71d88a484630ca,
         type: 3}
       propertyPath: m_textInfo.characterCount
