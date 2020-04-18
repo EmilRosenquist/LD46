@@ -12,7 +12,7 @@ public class Inventory : MonoBehaviour
     void Update()
     {
     }
-    Dictionary<int, int> GetItems()
+    public Dictionary<int, int> GetItems()
     {
         return mItems;
     }
