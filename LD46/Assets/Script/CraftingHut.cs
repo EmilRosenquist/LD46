@@ -99,4 +99,5 @@ public class CraftingHut : MonoBehaviour, IMouseInteractable
             Debug.Log("To far away to craft");
         }
     }
+
 }

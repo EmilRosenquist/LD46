@@ -12,16 +12,31 @@ public class CraftingMenuHandeler : MonoBehaviour, IToolTipable, ICraftClick
     Dictionary<CraftingRecipe, GameObject> recipeButtonPair = new Dictionary<CraftingRecipe, GameObject>();
     Dictionary<GameObject, CraftingRecipe> buttonRecipePair = new Dictionary<GameObject, CraftingRecipe>();
     private bool currentlyOpen;
+    [SerializeField] private GameObject dude;
+    [SerializeField] private GameObject craftingHut;
 
     private void Start()
     {
         currentlyOpen = recipesDrawer.activeInHierarchy;
         if (currentlyOpen) ToggleCraftingMenu();
+
+        if (!dude) dude = FindObjectOfType<DudeMovement>().gameObject;
+        if (craftingHut) craftingHut = FindObjectOfType<CraftingHut>().gameObject;
     }
 
     private void Update()
     {
-        if (currentlyOpen) UpdateCraftingMenu();
+        if (currentlyOpen)
+        {
+            if(Vector3.Distance(dude.transform.position, craftingHut.transform.position) > 10)
+            {
+                ToggleCraftingMenu();
+            }
+            else
+            {
+                UpdateCraftingMenu();
+            }
+        }
         if (currentlyOpen && Input.GetKeyDown(KeyCode.Escape)) ToggleCraftingMenu();
     }
 

@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16fbde3562b1e774d90a70681c1ca913, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  broken: 1
+  broken: 0
   fenceID: 4
   repairRange: 5
 --- !u!1001 &352947785336103851
@@ -124,6 +124,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: 0a2146ac1f7b76b4f9d54ee78486f66d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b73b6b356a7e86d4d8c4dff6001d3a60, type: 2}
     - target: {fileID: -927199367670048503, guid: 0a2146ac1f7b76b4f9d54ee78486f66d,
         type: 3}
       propertyPath: m_Name
@@ -199,6 +204,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: 187f257ada9af7449a98502984dea264,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b73b6b356a7e86d4d8c4dff6001d3a60, type: 2}
     - target: {fileID: -927199367670048503, guid: 187f257ada9af7449a98502984dea264,
         type: 3}
       propertyPath: m_Name
