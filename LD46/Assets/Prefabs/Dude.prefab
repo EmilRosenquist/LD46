@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7952423229167256170}
   - component: {fileID: 7952423229167256181}
   - component: {fileID: 7952423229167256171}
+  - component: {fileID: 2684587172880273046}
   m_Layer: 0
   m_Name: Dude
   m_TagString: Untagged
@@ -46,30 +47,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxVel: 10
-  accDeacc:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!143 &7952423229167256171
 CharacterController:
   m_ObjectHideFlags: 0
@@ -88,6 +65,18 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 1.25, z: 0}
+--- !u!114 &2684587172880273046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7952423229167256183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4a936348bf95b740b39a119f65c6895, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7952423229484581136
 PrefabInstance:
   m_ObjectHideFlags: 0
