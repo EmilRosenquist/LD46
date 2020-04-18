@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 352947786736204314}
   - component: {fileID: 352947786736204315}
   - component: {fileID: 352947786736204388}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Fence
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -130,6 +130,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: fence_01
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 187f257ada9af7449a98502984dea264,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 187f257ada9af7449a98502984dea264, type: 3}

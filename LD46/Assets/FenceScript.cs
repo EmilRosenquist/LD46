@@ -4,12 +4,40 @@ using UnityEngine;
 
 public class FenceScript : MonoBehaviour, IMouseInteractable
 {
-    [SerializeField] private GameObject fencePrefab;
-    [SerializeField] private GameObject brokenFencePrefab;
     [SerializeField] private bool broken;
     [SerializeField] private int fenceID = 4;
     [SerializeField] private float repairRange;
-    
+    BoxCollider bc;
+    MeshRenderer brokenMesh;
+    MeshRenderer wholeMesh;
+
+    public void Start()
+    {
+        bc = GetComponent<BoxCollider>();
+        wholeMesh = transform.GetChild(0).GetComponent<MeshRenderer>();
+        brokenMesh = transform.GetChild(1).GetComponent<MeshRenderer>();
+        wholeMesh.enabled = !broken;
+        brokenMesh.enabled = broken;
+        bc.isTrigger = broken;
+
+    }
+
+    public void Break()
+    {
+        broken = true;
+        wholeMesh.enabled = !broken;
+        brokenMesh.enabled = broken;
+        bc.isTrigger = broken;
+    }
+
+    public void Repair()
+    {
+        broken = false;
+        wholeMesh.enabled = !broken;
+        brokenMesh.enabled = broken;
+        bc.isTrigger = broken;
+    }
+
     public string GetText()
     {
         return "Hovering over : " + transform.name;
@@ -26,6 +54,7 @@ public class FenceScript : MonoBehaviour, IMouseInteractable
                 if (items.ContainsKey(4))
                 {
                     ToolTipHandler.instance.SetText("Repaired Fence");
+                    Repair();
                 }
                 else
                 {
