@@ -8,7 +8,9 @@ public class TopDownCamera : MonoBehaviour
     [SerializeField] private float closest = 5.0f;
     [SerializeField] private float furthest = 35.0f;
     [SerializeField] private float rotAngle = 45.0f;
-    
+    [SerializeField] private float DeadZoneDenominator = 6f;
+
+
     private float deadZone = 5.0f;
     private Vector3 ofset;
 
@@ -65,7 +67,7 @@ public class TopDownCamera : MonoBehaviour
 
     float CalculateDeadZone()
     {
-        return ofset.magnitude / 6;
+        return ofset.magnitude / DeadZoneDenominator;
     }
 
 }
