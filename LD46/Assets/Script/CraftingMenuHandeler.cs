@@ -69,7 +69,6 @@ public class CraftingMenuHandeler : MonoBehaviour, IToolTipable
             string toolTip = "Craft " + ItemDatabase.GetItem(buttonRecipePair[slot].itemId).mTitle + " ";
             foreach(var matPair in buttonRecipePair[slot].requiredMaterials)
             {
-                print(matPair);
                 mats.Add(matPair.Value + " amount of " + ItemDatabase.GetItem(matPair.Key).mTitle);
             }
             for(int i = 0; i < mats.Count; i++)
