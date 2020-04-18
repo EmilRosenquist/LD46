@@ -2,23 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MineRock : MonoBehaviour, IMouseInteractable
+public class Tree : MonoBehaviour, IMouseInteractable
 {
-    public int mineRange = 2;
-    public int stoneItemId = 1;
+    public int chopRange = 2;
+    public int woodItemId = 2;
 
     public string GetText()
     {
-        return "Click here to mine stone";
+        return "Click here to chop wood";
     }
 
     public void OnPress(Vector3 position, Inventory inventory)
     {
-        if (Vector3.Distance(position, transform.position) < mineRange)
+        if (Vector3.Distance(position, transform.position) < chopRange)
         {
             //Todo Go into animation state.
-            inventory.AddItemId(stoneItemId, 1);
-            Debug.Log("Mined stone");
+            inventory.AddItemId(woodItemId, 1);
+            Debug.Log("chopped wood");
         }
         else
         {
