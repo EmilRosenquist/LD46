@@ -47,20 +47,17 @@ public class JenkarController : MonoBehaviour
     {
         //BoxCollider regionCol = interestingRegion.GetComponent<BoxCollider>();
         Vector3 centerOfRegion = interestingRegion.transform.position;
-        print(centerOfRegion.x + -(interestingRegion.transform.localScale.x / 2));
         float xPos = centerOfRegion.x + Random.Range(-(interestingRegion.transform.localScale.x / 2), interestingRegion.transform.localScale.x / 2);
         float yPos = centerOfRegion.y + interestingRegion.transform.localScale.y / 2;
         float zPos = centerOfRegion.z + Random.Range(-(interestingRegion.transform.localScale.z / 2), interestingRegion.transform.localScale.z / 2);
 
         int layerMask = 1 << 9;
         Vector3 newTarget = new Vector3(xPos, yPos, zPos);
-        print(newTarget);
         RaycastHit hit;
         if (Physics.Raycast(newTarget, transform.TransformDirection(Vector3.down), out hit, Mathf.Infinity, layerMask))
         {
             newTarget = hit.point;
         }
-        print(newTarget);
 
         return newTarget;
     }
@@ -69,7 +66,6 @@ public class JenkarController : MonoBehaviour
     {
         if(Vector3.Distance(stuckPos, transform.position) < timeStuck)
         {
-            print("STUCK");
             return true;
         }
         stuckPos = transform.position;
